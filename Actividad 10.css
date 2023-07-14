@@ -1,0 +1,101 @@
+#Marca-Jminnovation{
+  display: flex;
+  border-style: double;
+  background-color: rgb(90, 124, 124);
+  padding: 3%;
+  justify-content: center;
+}
+  .logo-item{
+  
+      border-style:ridge;
+      width: 300px;
+      background-color: rgb(134, 98, 233);
+      text-align: center;
+      font-style:inherit ;
+    }
+    
+.B1{
+  
+    display:grid;
+    border-style: double;
+    background-color: rgb(83, 177, 223);
+    padding: 6%;
+    border-radius: 80%;
+}
+
+  #A1{
+margin-left: 40%;
+}
+
+  #A{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:10% ;
+    margin-left: 45%;
+   
+   
+}
+
+#B{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:10% ;
+   margin-left: 45%;
+ }
+
+#C{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: inherit;
+}
+
+ #R1{
+       
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ padding-left: inherit;
+ margin-left: 20%;
+
+}
+
+  .F{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+#S{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width:20% ;
+margin-left: 40%; }
+
+#R{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:20% ;
+  margin-left: 40%;
+}
+
+ #M{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ width:20% ;
+ margin-left: 40%;
+}
+          
+#D{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width:20% ;
+margin-left: 40%;
+} 
+            
+#resultadosuma{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ width:20% ;
+ margin-left: 42%;
+ }
+
+ 
+ button,input:hover {
+color: #c745d6;
+background: #5df05f;
+position: relative;
+background-color: #3ed2e9;
+ border-top-left-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ }
+
+ 

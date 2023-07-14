@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacion con usuario</title>
+    <link rel="stylesheet" type="text/css"href="Actividad 10.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    
+</head>
+
+<body>
+    <div id="Marca-Jminnovation">
+        <div class="logo-item">jd</div>
+       </div>
+      </br>
+      <div class="B">
+        <div class="c1"></div>
+        <div class="c1"></div>
+        <div class="c1"></div>
+      </div>
+    </br>    
+    <div class="B1">
+    <div class="B1">
+        <h1 id="C" >Calculadora</h1>
+    <br>
+        <P>
+        <input id="A" > 1 CARACTER  </input>
+</Div>
+
+</P>
+</br>
+
+<div class="B1">
+        <P>
+        <input id="B" > 2 CARACTER  </input>
+</Div>
+
+</P>
+</br>
+       
+ <button id="S" onclick="fcalc(1)">Sumar</button>
+ <button id="R" onclick="fcalc(2)">Restar</button>
+ <button id="M" onclick="fcalc(3)">Multiplicar</button>
+  <button id="D" onclick="fcalc(4)">Dividir</button>
+
+ <script>
+     console.log(" codigo JavaScript!")
+            
+    function fcalc(seloper){
+    console.log(" funcion calculadora!");
+    var ValA=0,ValB=0,Result=0;
+    ValA=document.getElementById("A");
+    ValB=document.getElementById("B");
+    
+    console.log("Valor A", ValA.value);
+    console.log("Valor B", ValB.value);
+   console.log("Valor Selector", seloper);
+    
+   if (!ValA.value || !ValB.value){
+  setText("Resultado","Sin  Datos");
+   }else{
+                    
+    switch (seloper) {
+        
+   case 1:
+     Result=suma(ValA,ValB);
+    break;
+     case 2: 
+    Result=resta(ValA,ValB);
+     break;    
+    case 3: 
+    Result=multip(ValA,ValB);
+     break;
+   case 4: 
+   Result=divide(ValA,ValB);
+  break;        
+ }
+                   
+ console.log("Resultado: ", Result);
+setText("resultadosuma","Resultado:"+Result);
+ }
+          
+}
+ function setText(id,newvalue) {
+  var s= document.getElementById(id);
+  s.innerHTML = newvalue;
+ }
+function suma(ValAin, ValBin){  return Number(ValAin.value)+Number(ValBin.value);
+ }
+ function resta(ValAin, ValBin){
+ return Number(ValAin.value)-Number(ValBin.value);
+}
+ function multip(ValAin, ValBin){
+ return Number(ValAin.value)*Number(ValBin.value);
+ }        
+function divide(ValAin, ValBin){
+ return Number(ValAin.value)/Number(ValBin.value);
+ }        
+            
+</script>
+        
+</br>
+        
+        <h1 id="resultadosuma" >Resultado: </h1> 
+
+</br>
+
+ </Div>
+
+</br>
+    <div class="B1">
+   
+    <div class="B1">
+
+    <h1 class="F">Formulario</h1>
+
+    <form id="A1" action="http://localhost/Proyecto%20DB_jd/Actividad%2010.php" method="post">
+
+        
+
+        <div align="center"><img  class="img" src="LOGO.png" width="13%"></div>
+</br>
+
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese nombre completo" required>
+
+    </br>
+    
+    <label for="Cedula"> Documento Cc:</label>
+    <input type="number" id="Cedula" 
+    name="Cedula" class="form-control"  placeholder="Ingrese Valor en numeros"
+    required>
+</br>
+    <label for="Edad"> Tu Edad:</label>
+    <input type="number" id="Edad" 
+    name="Edad" min="1" max="100" class="form-control"  placeholder="Ingrese Valor en numeros"required>
+   
+</br>
+
+<label for="Fecha">Fecha:</label>
+
+<input type="number" id="Dia" 
+name="Dia" min="1" max="31" class="form-control" placeholder="Dia"required>
+
+<input type="number" id="Mes" 
+name="Mes" min="1" max="12" class="form-control" placeholder="Mes"required>
+
+<input type="number" id="AÑO" 
+name="AÑO" min="1900" max="3000" class="form-control" placeholder="AÑO"required>
+
+</br>
+
+    <label for="correo">Correo: </label>
+        <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingrese correo electronico" required>
+    
+       
+
+</br>
+        
+        <input type="submit" value="Enviar" id="formulario"></button>   
+       
+    </form>
+   
+</div>
+
+
+
+ 
+</body>
+</html>
